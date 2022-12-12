@@ -2,7 +2,7 @@
 
 This Eleventy starter combines the [Google Docs API](https://developers.google.com/docs/api), [Eleventy](https://11ty.dev), and [@googleworkspace/google-docs-hast](https://www.npmjs.com/package/@googleworkspace/google-docs-hast) to create pages using Google Docs and Google Drive as a CMS.
 
-[Demo](https://jpoehnelt.github.io/eleventy-google-docs-starter)
+[Demo](https://eleventy-google-docs-starter.netlify.app)
 
 ## Setup
 
