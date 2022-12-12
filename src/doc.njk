@@ -1,0 +1,31 @@
+---
+pagination: 
+    data: 'docs'
+    size: 1
+    alias: 'doc'
+    addAllPagesToCollections: true
+permalink: "{{ doc.path }}.html"
+layout: layout.njk
+eleventyComputed:
+    title: "{{ doc.title }}"
+tags: documents
+---
+
+{{ doc.html | safe }}
+
+<hr />
+
+<p>Title: "{{ doc.title }}"</p>
+<p> ID: "<a href="https://docs.google.com/document/d/{{ doc.documentId }}">{{ doc.documentId }}</a>"</p>
+
+<div>{% for folder in doc.tree %}
+{% if loop.first %}
+<span>/</span>
+{% endif %}
+<a href="https://drive.google.com/drive/folders/{{ folder.id }}">{{ folder.name }}</a>
+<span>/</span>
+{% if loop.last %}
+<a href="https://docs.google.com/document/d/{{ doc.documentId }}">{{ doc.title }}</a>
+{% endif %}
+{% endfor %}
+</div>

@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsdoc/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "env": {
+    "node": true,
+    "es2022": true
+  },
+  "root": true,
+  "settings": {
+    "jsdoc": {
+      "ignoreInternal": true,
+      "ignorePrivate": true
+    }
+  }
+}

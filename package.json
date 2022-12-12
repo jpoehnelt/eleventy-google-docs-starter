@@ -1,0 +1,31 @@
+{
+  "name": "eleventy-google-docs-starter",
+  "version": "1.0.0",
+  "description": "Eleventy starter for Google Docs",
+  "scripts": {
+    "build": "eleventy --quiet",
+    "dev": "eleventy --serve --quiet",
+    "lint": "eslint src/**/*.js",
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "Justin Poehnelt",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "@11ty/eleventy-img": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0"
+  },
+  "dependencies": {
+    "@googleworkspace/google-docs-hast": "^1.0.1",
+    "google-auth-library": "^8.7.0",
+    "hast-util-to-html": "^8.0.3",
+    "unist-util-visit": "^4.1.1"
+  }
+}
